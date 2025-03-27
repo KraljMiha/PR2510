@@ -1,4 +1,4 @@
-# Analiza razlik v povprečnih mesečnih plačah v Sloveniji
+# Razlike v povprečnih mesečnih plačah v Sloveniji glede na regijo, starost in spol
 
 ### Avtorji: Miha Kralj, Armen Hodža, Tone Pivk
 

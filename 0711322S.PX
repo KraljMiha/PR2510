@@ -8,44 +8,44 @@ DECIMALS=0;
 SHOWDECIMALS=0;
 MATRIX="0711322S";
 SUBJECT-CODE="98";
-SUBJECT-AREA="PlaËe in stroöki dela - Earnings and Labour Cost";
+SUBJECT-AREA="Plaƒçe in stro≈°ki dela - Earnings and Labour Cost";
 SUBJECT-AREA[en]="Earnings and Labour Cost";
 COPYRIGHT=YES;
-DESCRIPTION="PovpreËne meseËne plaËe (EUR) po statistiËnih regijah prebivaliöËa, starostnih skupinah in spolu, Slovenija, 2008 - 2022";
+DESCRIPTION="Povpreƒçne meseƒçne plaƒçe (EUR) po statistiƒçnih regijah prebivali≈°ƒça, starostnih skupinah in spolu, Slovenija, 2008 - 2022";
 DESCRIPTION[en]="Average monthly earnings (EUR) by statistical regions of residence, age groups and sex, Slovenia, 2008 - 2022";
-TITLE="PovpreËne meseËne plaËe (EUR) po: STATISTI»NA REGIJA, STAROST, SPOL, LETO, PLA»A , MERITVE";
+TITLE="Povpreƒçne meseƒçne plaƒçe (EUR) po: STATISTIƒåNA REGIJA, STAROST, SPOL, LETO, PLAƒåA , MERITVE";
 TITLE[en]="Average monthly earnings (EUR) by STATISTICAL REGION, AGE, SEX, YEAR, EARNINGS and MEASURES";
-CONTENTS="PovpreËne meseËne plaËe (EUR)";
+CONTENTS="Povpreƒçne meseƒçne plaƒçe (EUR)";
 CONTENTS[en]="Average monthly earnings (EUR)";
 UNITS="EUR";
 UNITS[en]="EUR";
-STUB="STATISTI»NA REGIJA","STAROST","SPOL";
+STUB="STATISTIƒåNA REGIJA","STAROST","SPOL";
 STUB[en]="STATISTICAL REGION","AGE","SEX";
-HEADING="LETO","PLA»A","MERITVE";
+HEADING="LETO","PLAƒåA","MERITVE";Windows-1250
 HEADING[en]="YEAR","EARNINGS","MEASURES";
-VALUES("STATISTI»NA REGIJA")="SLOVENIJA","Pomurska","Podravska","Koroöka","Savinjska","Zasavska",
-"Posavska","Jugovzhodna Slovenija","Osrednjeslovenska","Gorenjska","Primorsko-notranjska","Goriöka",
-"Obalno-kraöka";
-VALUES[en]("STATISTICAL REGION")="SLOVENIA","Pomurska","Podravska","Koroöka","Savinjska","Zasavska",
-"Posavska","Jugovzhodna Slovenija","Osrednjeslovenska","Gorenjska","Primorsko-notranjska","Goriöka",
-"Obalno-kraöka";
+VALUES("STATISTIƒåNA REGIJA")="SLOVENIJA","Pomurska","Podravska","Koro≈°ka","Savinjska","Zasavska",
+"Posavska","Jugovzhodna Slovenija","Osrednjeslovenska","Gorenjska","Primorsko-notranjska","Gori≈°ka",
+"Obalno-kra≈°ka";
+VALUES[en]("STATISTICAL REGION")="SLOVENIA","Pomurska","Podravska","Koro≈°ka","Savinjska","Zasavska",
+"Posavska","Jugovzhodna Slovenija","Osrednjeslovenska","Gorenjska","Primorsko-notranjska","Gori≈°ka",
+"Obalno-kra≈°ka";
 VALUES("STAROST")="Starost - SKUPAJ","15-64 let","15-24 let","25-34 let","35-44 let","45-54 let",
-"55-64 let","65 let ali veË";
+"55-64 let","65 let ali veƒç";
 VALUES[en]("AGE")="Age - TOTAL","15-64 years","15-24 years","25-34 years","35-44 years",
 "45-54 years","55-64 years","65 years or more";
-VALUES("SPOL")="Spol - SKUPAJ","Moöki","éenske";
+VALUES("SPOL")="Spol - SKUPAJ","Mo≈°ki","≈Ωenske";
 VALUES[en]("SEX")="Sex - TOTAL","Men","Women";
 VALUES("LETO")="2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019",
 "2020","2021","2022";
 VALUES[en]("YEAR")="2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018",
 "2019","2020","2021","2022";
-VALUES("PLA»A")="Bruto","Neto";
+VALUES("PLAƒåA")="Bruto","Neto";
 VALUES[en]("EARNINGS")="Gross","Net";
-VALUES("MERITVE")="PovpreËje","Mediana","Spodnji kvartil","Zgornji kvartil","10. percentil",
+VALUES("MERITVE")="Povpreƒçje","Mediana","Spodnji kvartil","Zgornji kvartil","10. percentil",
 "90. percentil","99. percentil","Standardni odklon";
 VALUES[en]("MEASURES")="Average","Median","Lower quartile","Upper quartile","10th percentile",
 "90th percentile","99th percentile","Standard deviation";
-CODES("STATISTI»NA REGIJA")="0","01","02","03","04","05","06","07","08","09","10","11","12";
+CODES("STATISTIƒåNA REGIJA")="0","01","02","03","04","05","06","07","08","09","10","11","12";
 CODES[en]("STATISTICAL REGION")="0","01","02","03","04","05","06","07","08","09","10","11","12";
 CODES("STAROST")="TOT","1","2","3","4","5","6","7";
 CODES[en]("AGE")="TOT","1","2","3","4","5","6","7";
@@ -55,29 +55,29 @@ CODES("LETO")="2008","2009","2010","2011","2012","2013","2014","2015","2016","20
 "2020","2021","2022";
 CODES[en]("YEAR")="2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018",
 "2019","2020","2021","2022";
-CODES("PLA»A")="1","2";
+CODES("PLAƒåA")="1","2";
 CODES[en]("EARNINGS")="1","2";
 CODES("MERITVE")="1","2","3","4","5","6","7","8";
 CODES[en]("MEASURES")="1","2","3","4","5","6","7","8";
-ELIMINATION("STATISTI»NA REGIJA")="SLOVENIJA";
+ELIMINATION("STATISTIƒåNA REGIJA")="SLOVENIJA";
 ELIMINATION[en]("STATISTICAL REGION")="SLOVENIA";
 ELIMINATION("STAROST")="Starost - SKUPAJ";
 ELIMINATION[en]("AGE")="Age - TOTAL";
 ELIMINATION("SPOL")="Spol - SKUPAJ";
 ELIMINATION[en]("SEX")="Sex - TOTAL";
 LAST-UPDATED="20240621 10:30";
-CONTACT="StatistiËni urad RS, T: (01) 241 64 04, E: gp.surs@gov.si";
+CONTACT="Statistiƒçni urad RS, T: (01) 241 64 04, E: gp.surs@gov.si";
 CONTACT[en]="Statistical Office of the Republic of Slovenia, T: +386 1 241 64 04, E: gp.surs@gov.si";
 DATABASE="SI-STAT";
 DATABASE[en]="SI-STAT";
-SOURCE="StatistiËni urad Republike Slovenije";
+SOURCE="Statistiƒçni urad Republike Slovenije";
 SOURCE[en]="Statistical Office of the Republic of Slovenia";
-NOTE="Povezane vsebine:#- <A class=seznam HREF=https://www.stat.si/statweb/File/DocSysFile/8153 target=_blank>Metodoloöka pojasnila</A>#";
+NOTE="Povezane vsebine:#- <A class=seznam HREF=https://www.stat.si/statweb/File/DocSysFile/8153 target=_blank>Metodolo≈°ka pojasnila</A>#";
 NOTE[en]="Linked content:#- <A class=seznam HREF=https://www.stat.si/statweb/File/DocSysFile/8333 target=_blank>Methodological explanations</A>#";
-NOTE("STATISTI»NA REGIJA")="Podatki so teritorialno razvröËeni po Klasifikaciji statistiËnih teritorialnih enot v Evropski uniji (The Classification  of Territorial Units for Statistics) ñ NUTS (<A class='seznam' HREF=http://www.stat.si/StatWeb/"
-"glavnanavigacija/metode-in-klasifikacije/klasifikacije TARGET=_blank>opis in pojasnila</A>), raven NUTS 3. Podatki o spremembah posameznih statistiËnih regij so dostopni na <A class=seznam HREF=https://www.stat.si/StatWeb/File/DocSysFile/9430/ TARGET=_"
+NOTE("STATISTIƒåNA REGIJA")="Podatki so teritorialno razvr≈°ƒçeni po Klasifikaciji statistiƒçnih teritorialnih enot v Evropski uniji (The Classification  of Territorial Units for Statistics) ‚Äì NUTS (<A class='seznam' HREF=http://www.stat.si/StatWeb/"
+"glavnanavigacija/metode-in-klasifikacije/klasifikacije TARGET=_blank>opis in pojasnila</A>), raven NUTS 3. Podatki o spremembah posameznih statistiƒçnih regij so dostopni na <A class=seznam HREF=https://www.stat.si/StatWeb/File/DocSysFile/9430/ TARGET=_"
 "blank>povezavi</A>.";
-NOTE[en]("STATISTICAL REGION")="Data are territorially classsified according to The Classification of Territorial Units for Statistics ñ NUTS, (<A class='seznam' HREF=https://www.stat.si/StatWeb/en/Methods/Classifications TARGET=_blank>description and "
+NOTE[en]("STATISTICAL REGION")="Data are territorially classsified according to The Classification of Territorial Units for Statistics ‚Äì NUTS, (<A class='seznam' HREF=https://www.stat.si/StatWeb/en/Methods/Classifications TARGET=_blank>description and "
 "explanations</A>), level NUTS 3. Data on changes of individual statistical regions are available at the <A class=seznam HREF=https://www.stat.si/StatWeb/File/DocSysFile/9431/ TARGET=_blank>link</A>.";
 DATASYMBOL1="N";
 DATASYMBOL1[en]="N";

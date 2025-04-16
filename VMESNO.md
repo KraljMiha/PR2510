@@ -4,7 +4,7 @@
 
 ### 1. Uvod
 
-V tem poročilu predstavljamo analizo podatkov o povprečnih plačah v Sloveniji, ki zajema obdobje od leta 2008 do 2022. Podatki izhajajo iz OPSI (Odprti podatki Slovenije), kar zagotavlja zanesljivost in reprezentativnost informacij. Namen analize je pojasniti, kako so se plače spreminjale skozi čas ter raziskati medregionalne in spolne razlike v plačah. Dodatno smo analizirali vpliv starosti na višino plač v posameznih regijah. Pri tem poročilu se sklicujemo na izvorno kodo in sheme, ki so implementirane v našem Jupyter Notebook projektu na GitHubu.
+V tem poročilu predstavljamo analizo podatkov o povprečnih plačah v Sloveniji, ki zajema obdobje od leta 2008 do 2022. Podatki izhajajo iz OPSI (Odprti podatki Slovenije). Namen analize je pojasniti, kako so se plače spreminjale skozi čas ter raziskati medregionalne in spolne razlike v plačah. Dodatno smo analizirali povezavo starosti na višino plač v posameznih regijah. Pri tem poročilu se sklicujemo na izvorno kodo in sheme, ki so implementirane v našem Jupyter Notebook projektu na GitHubu.
 
 ### 2. Izvedene analize in uporabljena metodologija
 
@@ -49,7 +49,7 @@ Pri analizi smo izvedli naslednje postopke:
   ![Graf spolnih razlik](./slike/spolne_razlike.png)
 
 - **Dodatna vizualizacija:**  
-  Ustvarjena animacija, ki prikazuje razvoj plač med regijami skozi leta, ponuja dinamičen vpogled v časovni razvoj in medsebojne razlike v podatkih. Animacija jasno prikazuje, kako so se spremembe razvijale skozi letne cikle, ter dodatno poudarja konsistentnost posameznih regij.
+  Ustvarjena animacija, ki prikazuje razvoj plač med regijami skozi leta.
   ![Animacija razvoja plač med regijami skozi leta](placa_animacija.gif)
 
 ### 4. Zaključek

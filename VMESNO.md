@@ -50,6 +50,7 @@ Pri analizi smo izvedli naslednje postopke:
 
 - **Dodatna vizualizacija:**  
   Ustvarjena animacija, ki prikazuje razvoj plač med regijami skozi leta, ponuja dinamičen vpogled v časovni razvoj in medsebojne razlike v podatkih. Animacija jasno prikazuje, kako so se spremembe razvijale skozi letne cikle, ter dodatno poudarja konsistentnost posameznih regij.
+  ![Animacija razvoja plač med regijami skozi leta](placa_animacija.gif)
 
 ### 4. Zaključek
 

@@ -1,6 +1,8 @@
 import streamlit as st
 
-st.title("Interaktivna analiza plač v Sloveniji")
+st.image("slike/Regije_Slovenija.png", width=600)  # ali path do tvoje slike
+
+st.markdown("<h1 style='color:#4db8ff;'>📊 Interaktivna analiza plač v Sloveniji</h1>", unsafe_allow_html=True)
 st.markdown("""
 Dobrodošli v aplikaciji, kjer si lahko interaktivno ogledate:
 - bruto plače po regijah in starostnih skupinah

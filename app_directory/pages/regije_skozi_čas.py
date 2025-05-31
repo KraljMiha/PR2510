@@ -1,8 +1,10 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 import os
+import plotly.express as px
+
+st.set_page_config(page_title="Primerjava regij", layout="wide")
+st.markdown("<h1 style='color: #ff4d4d;'>📍 Primerjava bruto plač med regijami skozi leta</h1>", unsafe_allow_html=True)
 
 csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../placa_utf8.csv"))
 df = pd.read_csv(csv_path)
@@ -14,18 +16,26 @@ df = df[
     (df["STATISTIČNA REGIJA"] != "SLOVENIJA")
 ].copy()
 
-st.title("📍 Primerjava bruto plač med regijami skozi leta")
+with st.sidebar:
+    st.header("🎛️ Filtri")
+    spol = st.radio("Spol", ["Moški", "Ženske", "Spol - SKUPAJ"])
+    starost = st.selectbox("Starostna skupina", sorted(df["STAROST"].unique()))
+    st.markdown("Podatki prikazujejo povprečne **bruto plače** po regijah skozi leta.")
 
-spol = st.radio("Spol", ["Moški", "Ženske", "Spol - SKUPAJ"])
-starost = st.selectbox("Starostna skupina", sorted(df["STAROST"].unique()))
+df_filtered = df[(df["SPOL"] == spol) & (df["STAROST"] == starost)]
 
-filt = (df["SPOL"] == spol) & (df["STAROST"] == starost)
-df_filtered = df[filt]
+fig = px.line(
+    df_filtered,
+    x="LETO",
+    y="DATA",
+    color="STATISTIČNA REGIJA",
+    markers=True,
+    labels={"DATA": "Bruto plača (€)", "LETO": "Leto", "STATISTIČNA REGIJA": "Regija"},
+    title=f"📈 Bruto plače po regijah skozi čas ({spol}, {starost})"
+)
+fig.update_layout(legend_title_text="Regija", title_x=0.05)
 
-fig, ax = plt.subplots(figsize=(12, 6))
-sns.lineplot(data=df_filtered, x="LETO", y="DATA", hue="STATISTIČNA REGIJA", marker="o", ax=ax)
-ax.set_title(f"Bruto plače po regijah skozi čas ({spol}, {starost})")
-ax.set_ylabel("Bruto plača (€)")
-ax.set_xlabel("Leto")
-ax.legend(title="Regija", bbox_to_anchor=(1.05, 1), loc='upper left')
-st.pyplot(fig)
+st.plotly_chart(fig, use_container_width=True)
+
+with st.expander("📄 Pokaži podatkovno tabelo"):
+    st.dataframe(df_filtered.sort_values(["STATISTIČNA REGIJA", "LETO"]), use_container_width=True)

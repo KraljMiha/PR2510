@@ -44,18 +44,12 @@ else:
 
 st.write(f"Spadaš v skupino: **{starost_skupina}**")
 
-
 if value.size > 0:
     st.metric(label="Povprečna bruto plača (€)", value=f"{value[0]:.0f}")
 else:
     st.warning("Za izbrano kombinacijo ni podatkov.")
 
 st.subheader(f"📉 Trendi plače v regiji {regija} ({spol}, {starost})")
-trend_df = df[
-    (df["SPOL"] == spol) &
-    (df["STATISTIČNA REGIJA"] == regija) &
-    (df["STAROST"] == starost)
-]
 
 trend_df = df[
     (df["SPOL"] == spol) &
@@ -65,11 +59,8 @@ trend_df = df[
 
 trend_df["LETO"] = pd.to_numeric(trend_df["LETO"], errors="coerce")
 trend_df = trend_df.sort_values("LETO")
-
 trend_df = trend_df.dropna(subset=["DATA"])
 
-st.write("✅ Podatki za izris:")
-st.dataframe(trend_df[["LETO", "DATA"]])
 
 if trend_df["LETO"].nunique() < (df["LETO"].max() - df["LETO"].min() + 1):
     st.warning("⚠️ Nekatera leta manjkajo v podatkih za izbrano kombinacijo.")
@@ -80,3 +71,6 @@ ax.set_ylabel("Bruto plača (€)")
 ax.set_xlabel("Leto")
 ax.grid(True)
 st.pyplot(fig)
+
+st.write("✅ Podatki za izris:")
+st.dataframe(trend_df[["LETO", "DATA"]])

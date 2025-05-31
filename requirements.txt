@@ -4,3 +4,4 @@ pandas
 pyaxis
 seaborn
 ipython
+plotly

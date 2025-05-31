@@ -18,3 +18,30 @@ Podatke smo pridobili iz portala OPSI (Odprti podatki Slovenije). Podatki vklju�
 * Leto (2008–2022)
 
 Link: [Podatki OPSI](https://podatki.gov.si/dataset/surs0711322s)
+
+## Vir in oblika podatkov
+
+Podatke smo pridobili iz portala OPSI (Odprti podatki Slovenije). Podatki vključujejo različne kategorije, kot so povprečna plača, mediana plače, percentili. Organizirani so v obliki .px datotek in zajemajo naslednje dimenzije:
+
+*   Regija prebivališča (12 regij Slovenije)
+*   Starostne skupine (npr. 15–24, 25–34, 35–44, 45–54, 55–64, 65+)
+*   Spol (moški, ženske)
+*   Leto (2008–2022)
+
+Link: [Podatki OPSI](https://podatki.gov.si/dataset/surs0711322s)
+
+## Zahteve za namestitev (requirements.txt)
+
+Za zagon tega projekta potrebujete naslednje Python pakete. Seznam paketov je shranjen v datoteki `requirements.txt`.
+
+**Navodila za namestitev:**
+
+1.  Prepričajte se, da imate nameščen Python in pip.
+2.  Odprite ukazno vrstico ali terminal v mapi, kjer se nahaja datoteka `requirements.txt`.
+3.  Za namestitev vseh potrebnih paketov zaženite naslednji ukaz:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+    Ta ukaz bo namestil vse pakete, navedene v datoteki `requirements.txt`.

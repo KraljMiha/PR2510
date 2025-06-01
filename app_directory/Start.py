@@ -11,7 +11,5 @@ Dobrodošli v aplikaciji, kjer si lahko interaktivno ogledate:
 
 Uporabite meni na levi za izbiro posamezne analize.
 """)
-name = st.text_input("Vnesi svoje ime:")
-if name:
-    st.write(f"Pozdravljen, {name}! 👋 Dobrodošel v analizi slovenskih plač.")
+
 

@@ -5,3 +5,5 @@ pyaxis
 seaborn
 ipython
 plotly
+scikit-learn
+numpy

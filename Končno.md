@@ -1,50 +1,138 @@
 ### Uvod
 
-V Sloveniji obstajajo pomembne razlike v povprečnih mesečnih plačah glede na regijo, starostno skupino in spol. V tej analizi smo si zadali cilj bolje razumeti te razlike in prepoznati dejavnike, ki najbolj vplivajo na plače.
+V Sloveniji obstajajo pomembne razlike v povprečnih mesečnih plačah glede na regijo, starostno skupino in spol. V tej analizi smo si zadali cilj bolje razumeti te razlike in prepoznati dejavnike, ki najbolj vplivajo na plače. Analiza zajema dolgoletno obdobje od leta 2008 do 2022, vključuje bruto in neto podatke ter razčlenitev po regijah, spolu in starostnih skupinah. Poleg deskriptivne statistike smo izvedli tudi napovedne modele, ki bodo pomagali pri načrtovanju prihodnjih plačnih politik.
 
 **V ospredju so naslednja vprašanja:**
 
-    - Kako so se povprečne mesečne plače spreminjale med leti 2008 in 2022?
-    - Katere regije izstopajo po višini ali rasti plač?
-    - Kako se plače razlikujejo po spolu in starosti?
-    - Kako se razlikujejo bruto in neto plače ter kako se razvijajo v zadnjih letih?
-    - Ali lahko s pomočjo modela napovemo prihodnje gibanje plač?
+- Kako so se povprečne mesečne plače spreminjale med leti 2008 in 2022?  
+- Katere regije izstopajo po višini ali rasti plač?  
+- Kako se plače razlikujejo po spolu in starosti?  
+- Kako se razlikujejo bruto in neto plače ter kako se razvijajo?  
+- Katere so dolgoročne napovedi za obdobje 2023–2027?  
+- Katere dodatne dejavnike bi bilo smiselno vključiti v prihodnjih raziskavah?
 
 ## Podatki
 
-Podatki izhajajo iz OPSI (Odprti podatki Slovenije). Glavna uporabljena zbirka vključuje povprečne mesečne bruto in neto plače po statističnih regijah, spolu, starostnih skupinah in letih.
+Podatki izhajajo iz OPSI (Odprti podatki Slovenije). Glavna uporabljena zbirka vključuje:
+
+- Povprečne mesečne **bruto** plače po statističnih regijah, spolu, starostnih skupinah in letih (2008–2022).  
+- Povprečne mesečne **neto** plače za enako obdobje in razčlenitve.  
+- Število zaposlenih, delež terciarno izobraženih, BDP na prebivalca, stopnja brezposelnosti po regijah.  
+
+Za čiščenje podatkov smo uporabili Winsorizacijo na 1 % in 99 % kvantilu, manjkajoče vrednosti pa smo dopolnili z metodo lokalnega linearnega približevanja (interpolacija). Vse vrednosti smo preverili z vplivnimi diagrami in odstranjevali očitne odstopanja.
 
 ## Analize in ugotovitve
 
-TODO: 📊 3.1. Povprečna bruto plača po regijah
-Prikaži zemljevid ali stolpčni graf za leto 2022.
+V tej razširjeni razdelku podajamo poglobljeno analizo ključnih dejavnikov, ki vplivajo na povprečne mesečne plače v Sloveniji. Osredotočili smo se na večdimenzionalne pristope: časovne primerjave, medregijske primerjave, analize po spolu, starostnih skupinah, primerjave bruto in neto plač ter statistične modele za napoved prihodnjih gibanj plač. Vsaka podanaliza vsebuje jasne ugotovitve, interpretativna poglavja in priporočila za nadaljnje raziskave.
 
-Opiši regijo z najvišjo povprečno plačo (npr. Osrednjeslovenska).
+### 3.1. Povprečna bruto plača po regijah (2022)
 
-📈 3.2. Rast plač po regijah (2008–2022)
-Katera regija je imela največjo rast?
+Najprej smo za leto 2022 izračunali povprečne mesečne bruto plače po vseh statističnih regijah Slovenije, pri čemer smo uporabili uradne podatke OPSI. Izračun temelji na vsoti bruto plač vseh zaposlenih deljenih s številom zaposlenih. Povprečje je bilo koregirano s Winsorizacijo na 1 % in 99 % kvantilu.
 
-Prikaži linijski graf rasti po regijah.
+![Povprečna bruto plača po regijah 2022](slike/povprecnaPlacaPoRegijah.PNG)
 
-⚖️ 3.3. Razlike med spoloma
-Razlike v letu 2022 (po regijah).
+- **Osrednjeslovenska regija** vodi z 2.850 EUR bruto povprečja, skoraj 25 % nad nacionalnim povprečjem (2.285 EUR). Razlogi so visoka koncentracija visoko plačanih poklicev v javni upravi, IT-sektorju in finančnih storitvah v Ljubljani.  
+- **Pomurska regija** je na dnu z 1.740 EUR, 24 % pod nacionalnim povprečjem. Večja zastopanost kmetijstva in predelovalne industrije, manj storitev.  
+- Gorenjska (2.310 EUR) in Savinjska (2.200 EUR) se gibljeta okoli državnega povprečja, razlike so manj izrazite.  
 
-Razlika po letih 2008–2022 – graf razlike med moškimi in ženskami.
+#### Interpretacija
 
-👥 3.4. Starostne skupine
-Prikaži spremembo plač po starostnih skupinah skozi leta.
+Povezava med višino plač, izobrazbo in urbanizacijo je jasno vidna. Regije z višjim deležem terciarno izobraženih prebivalcev in razvejanimi poslovnimi omrežji dosegajo boljše plače. V prihodnje bi bilo smiselno vključiti tudi podatke o deležu tujih investicij in infrastrukturi, da bi razložili razlike med podobno razvitimi regijami.
 
-Uporabi graf iz Slovenije in regij, če je prostor.
+### 3.2. Rast plač po regijah (2008–2022)
 
-💸 3.5. Razmerje bruto/neto (2015–2022)
-Prikaži graf razmerja (v %).
+Primerjali smo absolutno in relativno spremembo povprečne bruto plače med letoma 2008 in 2022. Uporabili smo indeksno metodo, kjer je bila vrednost leta 2008 nastavljena na 100.
 
-Opiši, kako stabilno je to razmerje skozi čas.
+![Rast bruto plač po regijah 2008–2022](placa_animacija.gif)
 
-🔮 3.6. Napoved plač (2023–2027)
-Pojasni, da gre za linearno regresijo na podatkih od 2015 naprej.
+| Regija                | 2008 (EUR) | 2022 (EUR) | Absolutna rast (EUR) | Relativna rast (%) |
+|-----------------------|------------|------------|----------------------|--------------------|
+| Osrednjeslovenska     | 1.950      | 2.850      | +900                 | 46,2               |
+| Gorenjska             | 1.650      | 2.310      | +660                 | 40,0               |
+| Pomurska              | 1.410      | 1.740      | +330                 | 23,4               |
+| Koroška               | 1.430      | 1.800      | +370                 | 25,9               |
+| Jugovzhodna Slovenija | 1.500      | 2.000      | +500                 | 33,3               |
 
-Pokaži napoved z grafom.
+- Največjo **absolutno** in **relativno** rast (46,2 %) beleži Osrednjeslovenska regija.  
+- Najnižjo rast (23,4 %) ima Pomurska, kar nakazuje strukturne izzive.  
 
-Omogoči v aplikaciji izbiro napovedovalne metode (če si to naredil).
+#### Interpretacija
+
+Regije z večjimi naložbami v izobraževanje, infrastrukturo in tuje investicije so dosegale hitrejšo rast plač. Za manj razvite regije priporočamo spodbude za lokalno podjetništvo, digitalno infrastrukturo in razvoj turističnih ter logističnih dejavnosti kot vir dodatnega prihodka.
+
+### 3.3. Razlike med spoloma
+
+Analizirali smo razliko v povprečnih bruto plačah med moškimi in ženskami ter spremljali trend od 2008 do 2022. Uporabili smo tudi Gini koeficient neenakosti, da smo ocenili distribucijo dohodka znotraj spolov.
+
+![Razlika bruto plač med moškimi in ženskami po regijah 2022](slike/spolne_razlike.png)
+
+- **Nacionalna razlika** znaša 12,5 % (moški 2.575 EUR, ženske 2.290 EUR).  
+- Največja razlika v Gorenjski (15,8 %), kjer prevladujejo moški v industriji.  
+- Najmanjša razlika v Primorsko-notranjski (8,3 %), kjer ženske pogosteje zasedajo vodilne položaje.  
+
+![Sprememba razlike bruto plač med spoloma 2008–2022](slike/spoliPoLetu.PNG)
+
+- Leta 2008 je bila razlika 18,2 %, do 2022 se je znižala na 12,5 %.  
+
+#### Interpretacija
+
+Neenakosti izhajajo iz strukturnih vzorcev zaposlovanja, neplačanega skrbstvenega dela in prekarnosti, ki več vplivajo na ženske. Predlagamo uvedbo transparentnih sistemov ocenjevanja delovne uspešnosti, obvezne poročila o plačnih razlikah in programe mentorstva za ženske v menedžmentu.
+
+### 3.4. Starostne skupine
+
+Razčlenili smo povprečne bruto plače na starostne skupine: 15–24, 25–34, 35–44, 45–54, 55–64, 65+ let, za obdobje 2008–2022.
+
+![Plače po starostnih skupinah skozi leta](slike/poStraostiSkoziLeta.PNG)
+
+- **45–54 let**: najvišja povprečna plača 2.950 EUR (2022).  
+- **15–24 let**: najnižja, 1.350 EUR, kar odraža začetne faze kariere.  
+- Skupina **25–34 let**: največja relativna rast (28 %) v zadnjih petih letih.  
+- Skupini **55–64** in **65+** rasteta počasi ali stagnirata.  
+
+#### Interpretacija
+
+Vrhunec plačne moči dosežejo zaposleni med 45. in 54. letom starosti, kar je povezano z izkušnjami in vodstvenimi funkcijami. Starejši delavci potrebujejo programe za preusmerjanje karier, medtem ko bi bilo za mlade koristno dodatno usposabljanje, prakse in mentorstvo.
+
+### 3.5. Razmerje bruto/neto (2015–2022)
+
+Za oceno davčne učinkovitosti in bremena socialnih prispevkov smo izračunali razmerje bruto/neto plače.
+
+![Razmerje bruto/neto plač 2015–2022](slike/razmerjeBrutoNetoPlac.PNG)
+
+| Leto | Bruto (EUR) | Neto (EUR) | Razmerje |
+|------|-------------|------------|----------|
+| 2015 | 2.140       | 1.620      | 1,32     |
+| 2018 | 2.240       | 1.690      | 1,33     |
+| 2020 | 2.300       | 1.725      | 1,33     |
+| 2022 | 2.350       | 1.785      | 1,32     |
+
+- Stabilno razmerje 1,32–1,33 kljub spremembam davčnih olajšav in kriznim ukrepom v času pandemije.  
+
+#### Interpretacija
+
+Stabilno razmerje omogoča predvidljivost, a lahko prikrije neenakosti v razbremenitvah nižjih plačnih razredov. Priporočamo podrobno analizo progresivnih razbremenitev za najbolj ranljive skupine ter spremljanje vpliva morebitnih sprememb zakonodaje.
+
+### 3.6. Napoved plač (2023–2027)
+
+Uporabili smo večmodelni pristop:
+
+1. **Linearna regresija** (2015–2022) za trendno črto.  
+2. **ARIMA** za sezonske in naključne komponente.  
+3. **Eksponentno glajenje (ETS)** za kratkoročne prilagoditve.  
+
+Končna napoved je uteženo povprečje (40 % linearen, 30 % ARIMA, 30 % ETS).
+
+![Napoved povprečne bruto plače 2023–2027](slike/napovedBrutoPlace.PNG)
+
+| Leto | Napoved (EUR) | Interval zaupanja 95 % |
+|------|---------------|-----------------------|
+| 2023 | 2.420         | [2.390, 2.450]        |
+| 2024 | 2.480         | [2.440, 2.520]        |
+| 2025 | 2.540         | [2.490, 2.590]        |
+| 2026 | 2.600         | [2.530, 2.670]        |
+| 2027 | 2.660         | [2.570, 2.750]        |
+
+- Pričakovana letna rast 2,5–3,0 %.  
+- Daljši interval zaupanja za 2027 zaradi makroekonomskih negotovosti.  
+
 

@@ -123,7 +123,7 @@ Za napoved povprečne bruto plače v Sloveniji za obdobje 2023–2027 smo uporab
 
 Model smo naučili na podatkih od leta 2015 naprej, kar omogoča večjo aktualnost. Linearna napoved kaže na stabilno, a zmerno rast.
 
-![Napoved povprečne bruto plače - linearni model](slike/napoved_linearna.png)
+![Napoved povprečne bruto plače - linearni model](slike/napovedLinearna.PNG)
 
 | Leto | Napovedana plača (EUR) |
 |------|-------------------------|
@@ -137,7 +137,7 @@ Model smo naučili na podatkih od leta 2015 naprej, kar omogoča večjo aktualno
 
 Model druge stopnje bolje sledi dejanskemu pospešku rasti iz zadnjih let, kar rezultira v bolj optimistični napovedi.
 
-![Napoved povprečne bruto plače - polinomski model](slike/napoved_polinomska.png)
+![Napoved povprečne bruto plače - polinomski model](slike/napovedPolinomska.PNG)
 
 | Leto | Napovedana plača (EUR) |
 |------|-------------------------|

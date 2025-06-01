@@ -5,3 +5,4 @@ pyaxis
 seaborn
 ipython
 plotly
+sklearn

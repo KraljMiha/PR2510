@@ -28,6 +28,7 @@ V tej razširjeni razdelku podajamo poglobljeno analizo ključnih dejavnikov, ki
 ### 3.1. Povprečna bruto plača po regijah (2022)
 
 Najprej smo za leto 2022 izračunali povprečne mesečne bruto plače po vseh statističnih regijah Slovenije. Izračun temelji na vsoti bruto plač vseh zaposlenih deljenih s številom zaposlenih. Povprečje je bilo koregirano s Winsorizacijo na 1 % in 99 % kvantilu.
+Nato pa smo absolutno in relativno spremembo povprečne bruto plače med letoma 2008 in 2022. Uporabili smo indeksno metodo, kjer je bila vrednost leta 2008 nastavljena na 100.
 
 ![Rast bruto plač po regijah 2008–2022](placa_animacija.gif)
 
@@ -77,7 +78,8 @@ Razčlenili smo povprečne bruto plače na starostne skupine: 15–24, 25–34, 
 
 #### Interpretacija
 
-Vrhunec plačne moči dosežejo zaposleni med 45. in 54. letom starosti, kar je povezano z izkušnjami in vodstvenimi funkcijami. Starejši delavci potrebujejo programe za preusmerjanje karier, medtem ko bi bilo za mlade koristno dodatno usposabljanje, prakse in mentorstvo.
+Kot prikazuje graf, ima najvišjo povprečno bruto plačo starostna skupina 65 let in več. Ta skupina je številčno najmanjša, saj je večina ljudi v tej starosti že v pokoju. Tisti, ki ostanejo aktivni na trgu dela, pa pogosto zasedajo vodilne položaje, kot so lastniki podjetij ali direktorji, kar pojasnjuje visoko povprečno plačo. Na tej skupini je tudi najbolj opazen vpliv gospodarske krize med letoma 2012 in 2015.
+Pri mlajših skupinah so plače skladne s pričakovanji. Skupina 15–24 let ima najnižje povprečne bruto plače, kar je razumljivo, saj gre večinoma za začetnike na trgu dela. V starostni skupini 25–34 let se opazi izrazita rast plač, kar sovpada z nabiranjem izkušenj in napredovanjem v karieri. Skupina 35–64 let ima, poleg najstarejše skupine, najvišje povprečne plače, kar je smiselno, saj gre za najbolj produktivna in izkušena leta posameznikove kariere.
 
 ### 3.4. Razmerje bruto/neto (2015–2022)
 

@@ -27,21 +27,7 @@ V tej razširjeni razdelku podajamo poglobljeno analizo ključnih dejavnikov, ki
 
 ### 3.1. Povprečna bruto plača po regijah (2022)
 
-Najprej smo za leto 2022 izračunali povprečne mesečne bruto plače po vseh statističnih regijah Slovenije, pri čemer smo uporabili uradne podatke OPSI. Izračun temelji na vsoti bruto plač vseh zaposlenih deljenih s številom zaposlenih. Povprečje je bilo koregirano s Winsorizacijo na 1 % in 99 % kvantilu.
-
-![Povprečna bruto plača po regijah 2022](slike/povprecnaPlacaPoRegijah.PNG)
-
-- **Osrednjeslovenska regija** vodi z 2.850 EUR bruto povprečja, skoraj 25 % nad nacionalnim povprečjem (2.285 EUR). Razlogi so visoka koncentracija visoko plačanih poklicev v javni upravi, IT-sektorju in finančnih storitvah v Ljubljani.  
-- **Pomurska regija** je na dnu z 1.740 EUR, 24 % pod nacionalnim povprečjem. Večja zastopanost kmetijstva in predelovalne industrije, manj storitev.  
-- Gorenjska (2.310 EUR) in Savinjska (2.200 EUR) se gibljeta okoli državnega povprečja, razlike so manj izrazite.  
-
-#### Interpretacija
-
-Povezava med višino plač, izobrazbo in urbanizacijo je jasno vidna. Regije z višjim deležem terciarno izobraženih prebivalcev in razvejanimi poslovnimi omrežji dosegajo boljše plače. V prihodnje bi bilo smiselno vključiti tudi podatke o deležu tujih investicij in infrastrukturi, da bi razložili razlike med podobno razvitimi regijami.
-
-### 3.2. Rast plač po regijah (2008–2022)
-
-Primerjali smo absolutno in relativno spremembo povprečne bruto plače med letoma 2008 in 2022. Uporabili smo indeksno metodo, kjer je bila vrednost leta 2008 nastavljena na 100.
+Najprej smo za leto 2022 izračunali povprečne mesečne bruto plače po vseh statističnih regijah Slovenije. Izračun temelji na vsoti bruto plač vseh zaposlenih deljenih s številom zaposlenih. Povprečje je bilo koregirano s Winsorizacijo na 1 % in 99 % kvantilu.
 
 ![Rast bruto plač po regijah 2008–2022](placa_animacija.gif)
 
@@ -60,7 +46,7 @@ Primerjali smo absolutno in relativno spremembo povprečne bruto plače med leto
 
 Regije z večjimi naložbami v izobraževanje, infrastrukturo in tuje investicije so dosegale hitrejšo rast plač. Za manj razvite regije priporočamo spodbude za lokalno podjetništvo, digitalno infrastrukturo in razvoj turističnih ter logističnih dejavnosti kot vir dodatnega prihodka.
 
-### 3.3. Razlike med spoloma
+### 3.2. Razlike med spoloma
 
 Analizirali smo razliko v povprečnih bruto plačah med moškimi in ženskami ter spremljali trend od 2008 do 2022. Uporabili smo tudi Gini koeficient neenakosti, da smo ocenili distribucijo dohodka znotraj spolov.
 
@@ -78,7 +64,7 @@ Analizirali smo razliko v povprečnih bruto plačah med moškimi in ženskami te
 
 Neenakosti izhajajo iz strukturnih vzorcev zaposlovanja, neplačanega skrbstvenega dela in prekarnosti, ki več vplivajo na ženske. Predlagamo uvedbo transparentnih sistemov ocenjevanja delovne uspešnosti, obvezne poročila o plačnih razlikah in programe mentorstva za ženske v menedžmentu.
 
-### 3.4. Starostne skupine
+### 3.3. Starostne skupine
 
 Razčlenili smo povprečne bruto plače na starostne skupine: 15–24, 25–34, 35–44, 45–54, 55–64, 65+ let, za obdobje 2008–2022.
 
@@ -93,7 +79,7 @@ Razčlenili smo povprečne bruto plače na starostne skupine: 15–24, 25–34, 
 
 Vrhunec plačne moči dosežejo zaposleni med 45. in 54. letom starosti, kar je povezano z izkušnjami in vodstvenimi funkcijami. Starejši delavci potrebujejo programe za preusmerjanje karier, medtem ko bi bilo za mlade koristno dodatno usposabljanje, prakse in mentorstvo.
 
-### 3.5. Razmerje bruto/neto (2015–2022)
+### 3.4. Razmerje bruto/neto (2015–2022)
 
 Za oceno davčne učinkovitosti in bremena socialnih prispevkov smo izračunali razmerje bruto/neto plače.
 
@@ -112,7 +98,7 @@ Za oceno davčne učinkovitosti in bremena socialnih prispevkov smo izračunali 
 
 Stabilno razmerje omogoča predvidljivost, a lahko prikrije neenakosti v razbremenitvah nižjih plačnih razredov. Priporočamo podrobno analizo progresivnih razbremenitev za najbolj ranljive skupine ter spremljanje vpliva morebitnih sprememb zakonodaje.
 
-### 3.6. Napoved plač (2023–2027)
+### 3.5. Napoved plač (2023–2027)
 
 Za napoved povprečne bruto plače v Sloveniji za obdobje 2023–2027 smo uporabili dva pristopa strojnega učenja:
 

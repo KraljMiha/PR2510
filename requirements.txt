@@ -6,3 +6,4 @@ seaborn
 ipython
 plotly
 sklearn
+numpy

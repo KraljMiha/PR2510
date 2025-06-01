@@ -114,25 +114,44 @@ Stabilno razmerje omogoča predvidljivost, a lahko prikrije neenakosti v razbrem
 
 ### 3.6. Napoved plač (2023–2027)
 
-Uporabili smo večmodelni pristop:
+Za napoved povprečne bruto plače v Sloveniji za obdobje 2023–2027 smo uporabili dva pristopa strojnega učenja:
 
-1. **Linearna regresija** (2015–2022) za trendno črto.  
-2. **ARIMA** za sezonske in naključne komponente.  
-3. **Eksponentno glajenje (ETS)** za kratkoročne prilagoditve.  
+1. **Linearna regresija** – preprost model, ki predpostavlja enakomerno rast.
+2. **Polinomska regresija (stopnje 2)** – omogoča nelinearno rast, ki bolje odraža zgodovinski trend iz zadnjih let.
 
-Končna napoved je uteženo povprečje (40 % linearen, 30 % ARIMA, 30 % ETS).
+#### Linearni model (2015–2022)
 
-![Napoved povprečne bruto plače 2023–2027](slike/napovedBrutoPlace.PNG)
+Model smo naučili na podatkih od leta 2015 naprej, kar omogoča večjo aktualnost. Linearna napoved kaže na stabilno, a zmerno rast.
 
-| Leto | Napoved (EUR) | Interval zaupanja 95 % |
-|------|---------------|-----------------------|
-| 2023 | 2.420         | [2.390, 2.450]        |
-| 2024 | 2.480         | [2.440, 2.520]        |
-| 2025 | 2.540         | [2.490, 2.590]        |
-| 2026 | 2.600         | [2.530, 2.670]        |
-| 2027 | 2.660         | [2.570, 2.750]        |
+![Napoved povprečne bruto plače - linearni model](slike/napoved_linearna.png)
 
-- Pričakovana letna rast 2,5–3,0 %.  
-- Daljši interval zaupanja za 2027 zaradi makroekonomskih negotovosti.  
+| Leto | Napovedana plača (EUR) |
+|------|-------------------------|
+| 2023 | 2.210 €                 |
+| 2024 | 2.287 €                 |
+| 2025 | 2.365 €                 |
+| 2026 | 2.442 €                 |
+| 2027 | 2.519 €                 |
+
+#### Polinomski model (stopnja 2)
+
+Model druge stopnje bolje sledi dejanskemu pospešku rasti iz zadnjih let, kar rezultira v bolj optimistični napovedi.
+
+![Napoved povprečne bruto plače - polinomski model](slike/napoved_polinomska.png)
+
+| Leto | Napovedana plača (EUR) |
+|------|-------------------------|
+| 2023 | 2.348 €                 |
+| 2024 | 2.517 €                 |
+| 2025 | 2.705 €                 |
+| 2026 | 2.910 €                 |
+| 2027 | 3.134 €                 |
+
+#### Primerjava in interpretacija
+
+- **Linearna regresija** ponuja bolj konzervativno oceno rasti (okoli 2,5 % letno).
+- **Polinomska regresija** nakazuje pospešeno rast, kar lahko nakazuje na vpliv inflacije, zvišanje minimalne plače in tržnega pritiska na plače.
+- Za strateško načrtovanje plačnih politik priporočamo redno posodabljanje modelov in vključitev dodatnih dejavnikov, kot so inflacija, produktivnost, gospodarska rast in demografski trendi.
+
 
 

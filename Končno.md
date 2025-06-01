@@ -15,11 +15,6 @@ V Sloveniji obstajajo pomembne razlike v povprečnih mesečnih plačah glede na 
 
 Podatki izhajajo iz OPSI (Odprti podatki Slovenije). Glavna uporabljena zbirka vključuje:
 
-- Povprečne mesečne **bruto** plače po statističnih regijah, spolu, starostnih skupinah in letih (2008–2022).  
-- Povprečne mesečne **neto** plače za enako obdobje in razčlenitve.  
-- Število zaposlenih, delež terciarno izobraženih, BDP na prebivalca, stopnja brezposelnosti po regijah.  
-
-Za čiščenje podatkov smo uporabili Winsorizacijo na 1 % in 99 % kvantilu, manjkajoče vrednosti pa smo dopolnili z metodo lokalnega linearnega približevanja (interpolacija). Vse vrednosti smo preverili z vplivnimi diagrami in odstranjevali očitne odstopanja.
 
 ## Analize in ugotovitve
 
@@ -27,7 +22,7 @@ V tej razširjeni razdelku podajamo poglobljeno analizo ključnih dejavnikov, ki
 
 ### 3.1. Povprečna bruto plača po regijah (2022)
 
-Najprej smo za leto 2022 izračunali povprečne mesečne bruto plače po vseh statističnih regijah Slovenije. Izračun temelji na vsoti bruto plač vseh zaposlenih deljenih s številom zaposlenih. Povprečje je bilo koregirano s Winsorizacijo na 1 % in 99 % kvantilu.
+Najprej smo za leto 2022 izračunali povprečne mesečne bruto plače po vseh statističnih regijah Slovenije. Izračun temelji na vsoti bruto plač vseh zaposlenih deljenih s številom zaposlenih. 
 Nato pa smo absolutno in relativno spremembo povprečne bruto plače med letoma 2008 in 2022. Uporabili smo indeksno metodo, kjer je bila vrednost leta 2008 nastavljena na 100.
 
 ![Rast bruto plač po regijah 2008–2022](placa_animacija.gif)
@@ -54,16 +49,15 @@ Analizirali smo razliko v povprečnih bruto plačah med moškimi in ženskami te
 ![Razlika bruto plač med moškimi in ženskami po regijah 2022](slike/spolne_razlike.png)
 
 - **Nacionalna razlika** znaša 12,5 % (moški 2.575 EUR, ženske 2.290 EUR).  
-- Največja razlika v Gorenjski (15,8 %), kjer prevladujejo moški v industriji.  
-- Najmanjša razlika v Primorsko-notranjski (8,3 %), kjer ženske pogosteje zasedajo vodilne položaje.  
+- Največja razlika v Obalno-kraški, kjer prevladujejo moški v industriji.  
+- Najmanjša razlika v Primorsko-notranjski (8,3 %).
 
 ![Sprememba razlike bruto plač med spoloma 2008–2022](slike/spoliPoLetu.PNG)
 
-- Leta 2008 je bila razlika 18,2 %, do 2022 se je znižala na 12,5 %.  
 
 #### Interpretacija
 
-Neenakosti izhajajo iz strukturnih vzorcev zaposlovanja, neplačanega skrbstvenega dela in prekarnosti, ki več vplivajo na ženske. Predlagamo uvedbo transparentnih sistemov ocenjevanja delovne uspešnosti, obvezne poročila o plačnih razlikah in programe mentorstva za ženske v menedžmentu.
+
 
 ### 3.3. Starostne skupine
 
@@ -98,7 +92,7 @@ Za oceno davčne učinkovitosti in bremena socialnih prispevkov smo izračunali 
 
 #### Interpretacija
 
-Stabilno razmerje omogoča predvidljivost, a lahko prikrije neenakosti v razbremenitvah nižjih plačnih razredov. Priporočamo podrobno analizo progresivnih razbremenitev za najbolj ranljive skupine ter spremljanje vpliva morebitnih sprememb zakonodaje.
+Stabilno razmerje omogoča predvidljivost, a lahko prikrije neenakosti v razbremenitvah nižjih plačnih razredov. 
 
 ### 3.5. Napoved plač (2023–2027)
 
@@ -139,7 +133,7 @@ Model druge stopnje bolje sledi dejanskemu pospešku rasti iz zadnjih let, kar r
 
 - **Linearna regresija** ponuja bolj konzervativno oceno rasti (okoli 2,5 % letno).
 - **Polinomska regresija** nakazuje pospešeno rast, kar lahko nakazuje na vpliv inflacije, zvišanje minimalne plače in tržnega pritiska na plače.
-- Za strateško načrtovanje plačnih politik priporočamo redno posodabljanje modelov in vključitev dodatnih dejavnikov, kot so inflacija, produktivnost, gospodarska rast in demografski trendi.
 
 
-
+#### Dostop do interaktivne Streamlit spletne aplikacije je dostopen po sledeči povezavi:"
+https://pr2510-fau4gyd6mzqg7f6bnizrpz.streamlit.app/
